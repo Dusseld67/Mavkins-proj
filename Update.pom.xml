@@ -1,20 +1,21 @@
-package ca.uwo.csd.cs2212.USERNAME;
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ca.uwo.csd.cs2212.USERNAME</groupId>
+  <artifactId>USERNAME-lab5</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
 
-public class BankAccount {
+  <properties>
+    <maven.compiler.source>7</maven.compiler.source>
+    <maven.compiler.target>7</maven.compiler.target>
+  </properties>
 
-  private double balance;
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+    </dependency>
+  </dependencies>
 
-  public BankAccount(double balance) {
-    this.balance = balance;
-  }
-
-  public double debit(double amount) {
-    if (balance < amount) {
-      amount = balance;
-    }
-
-    balance -= amount;
-    return amount;
-  }
-
-}
+</project>
